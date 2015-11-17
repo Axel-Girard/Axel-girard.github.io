@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <title>Chocolatit</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+
+      <header>
+        <h1>Chocolatit</h1>
+      </header>
+
+      <nav>
+        <div id="menu">
+          Menu
+          <ul id="menu-content">
+            <li> Recherche : <input type="text" onchange="recherche(this.value)" /> </li>
+            <li id="champRecherche">
+              Taille :
+              <button onclick="smallPreview()"> Petit </button>
+              <button onclick="normalPreview()"> Moyen </button>
+              <button onclick="largPreview()"> Grand </button>
+            </li>
+            <li>
+              Tri :
+              <button onclick="populaire()"> Populaire </button>
+              <button onclick="nouveau()"> Nouveau </button>
+              <button onclick="progression()"> En progression </button>
+              <button onclick="controverse()"> Controversé </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="content">
+        <table>
+          <tr id="api">
+
+            <!-- se conplete avec le javascript -->
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/rage__by_dunklayth.png" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/1.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/2.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/3.png" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/4.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/5.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/6.png" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/inktober__2_by_ayane45.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+
+              <td>
+                <a href=# >
+                  <div class="crop">
+                    <p class="legende">image</p>
+                    <img src="img_test/quiet_by_kuvshinov_ilya.jpg" alt="image de test avec une légende" class="image" />
+                  </div>
+                </a>
+              </td>
+          </tr>
+        </table>
+      </div>
+
+      <footer>
+        <p>Axel GIRARD projet LP SIL</p>
+      </footer>
+    </div>
+  </body>
+</html>

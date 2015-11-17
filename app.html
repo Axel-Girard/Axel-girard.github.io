@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <title>Chocolatit</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+
+      <header>
+        <h1>Chocolatit</h1>
+      </header>
+
+      <nav>
+        <div id="menu">
+          Menu
+          <ul id="menu-content">
+            <li> Recherche : <input type="text" onchange="recherche(this.value)" /> </li>
+            <li id="champRecherche">
+              Taille :
+              <button onclick="smallPreview()"> Petit </button>
+              <button onclick="normalPreview()"> Moyen </button>
+              <button onclick="largPreview()"> Grand </button>
+            </li>
+            <li>
+              Tri :
+              <button onclick="populaire()"> Populaire </button>
+              <button onclick="nouveau()"> Nouveau </button>
+              <button onclick="progression()"> En progression </button>
+              <button onclick="controverse()"> Controversé </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div id="content">
+        <table>
+          <tr id="api">
+
+            <!-- se conplete avec le javascript -->
+            <!--
+              <td>
+                <a href=" " >
+                  <div class="crop">
+                    <p class="legende">t</p>
+                    <img src="images/rage__by_dunklayth.png" alt="t" class="image"/>
+                  </div>
+                </div>
+                </a>
+              </td>
+            -->
+          </tr>
+        </table>
+      </div>
+
+      <footer>
+        <p>Axel GIRARD projet LP SIL</p>
+      </footer>
+      <script type="text/javascript" src="js/recuperation.js"></script>
+      <script type="text/javascript" src="js/resize.js"></script>
+    </div>
+  </body>
+</html>

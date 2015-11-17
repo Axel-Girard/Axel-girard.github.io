@@ -1,0 +1,157 @@
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+
+* {
+	background-color: #251B12;
+	color: #eae0c2;
+	text-shadow: #000000 5px 5px 1px;
+	font-family: 'Berkshire Swash', 'Times new roman',  sans-serif;
+	font-size: 12pt;
+}
+
+header h1{
+	font-size: 200%;
+	padding-left: 10px;
+}
+
+footer {
+	text-align: center;
+	font-style: italic;
+	font-size: 10pt;
+}
+
+nav {
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #20140f;
+	z-index: 2;
+}
+
+nav div {
+	background-color: #20140f;
+}
+
+nav ul {
+	background-color: #20140f;
+	margin-left: 0;
+}
+
+nav li {
+	list-style: none;
+	background-color: #20140f;
+}
+
+#content {
+	max-width: 80%;
+	margin: auto;
+	margin-top: 70px;
+	padding: 0;
+	text-align: center;
+}
+
+#content table {
+	margin: auto;
+	text-align: center;
+}
+
+#content tr {
+	text-align: center;
+}
+
+tr:hover td:not(:hover) {
+	-webkit-filter: grayscale(1) blur(2px);
+	-moz-filter: grayscale(1) blur(2px);
+	-ms-filter: grayscale(1) blur(2px);
+	-o-filter: grayscale(1) blur(2px);
+	filter: grayscale(1) blur(2px);
+}
+
+#content td {
+	position: relative;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+#content td:hover {
+	z-index: 50;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+#content td .legende {
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: rgba(37, 27, 18, 0.5);
+	width: 100%;
+	z-index: 2;
+}
+
+#content td:hover .legende {
+	display: inherit;
+}
+
+.crop {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.crop .image {
+	max-width: 600px;
+	max-height: 600px;
+}
+
+button {
+	color: #251B12;
+	font-weight: bold;
+	text-shadow: none;
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: 1px solid #514841;
+	box-shadow: #000000 2px 2px 2px;
+	cursor: pointer;
+	background: linear-gradient(rgb(234, 224, 194) 5%, rgb(204, 194, 166) 100%) rgb(234, 224, 194);
+}
+
+@media (min-width: 640px) {
+	nav {
+		position: fixed;
+		float: left;
+	}
+
+	#menu:hover #menu-content {
+		display: initial;
+	}
+
+	#menu-content {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+	#champRecherche {
+		display: none;
+	}
+
+	.crop {
+		width: 150px;
+		height: 150px;
+	}
+
+	.crop .image {
+		max-width: 300px;
+		max-height: 300px;
+	}
+}
