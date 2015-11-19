@@ -45,16 +45,18 @@ function miseEnForme(data){
 	document.getElementById("api").innerHTML = "";
 	for (cptImage = 0; cptImage < 50 ; cptImage++) {
 		if(obj.data.children[cptImage] !== undefined){
-			document.getElementById("api").innerHTML +=
-      "<td> " +
-        "<a href=\"" + obj.data.children[cptImage].data.url + "\">" +
-          "<div class=\"crop\"> " +
-						"<p class=\"legende\">" + obj.data.children[cptImage].data.title + "</p>" +
-            "<img src=\"" + obj.data.children[cptImage].data.url + "\" alt=\"" +
-							obj.data.children[cptImage].data.title + "\" " + " class=\"image\" \">" +
-          "</div>" +
-        "</a>" +
-      "</td>";
+			if(obj.data.children[cptImage].data.preview !== undefined){
+				document.getElementById("api").innerHTML +=
+	      "<td> " +
+	        "<a href=\"" + obj.data.children[cptImage].data.url + "\">" +
+	          "<div class=\"crop\"> " +
+							"<p class=\"legende\">" + obj.data.children[cptImage].data.title + "</p>" +
+	            "<img src=\"" + obj.data.children[cptImage].data.preview.images[0].source[0] + "\" alt=\"" +
+								obj.data.children[cptImage].data.title + "\" " + " class=\"image\" \">" +
+	          "</div>" +
+	        "</a>" +
+	      "</td>";
+			}
 		}
 	}
 	if(document.getElementById("api").innerHTML === ""){
