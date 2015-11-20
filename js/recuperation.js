@@ -51,7 +51,7 @@ function miseEnForme(data){
 	        "<a href=\"" + obj.data.children[cptImage].data.url + "\">" +
 	          "<div class=\"crop\"> " +
 							"<p class=\"legende\">" + obj.data.children[cptImage].data.title + "</p>" +
-	            "<img src=\"" + obj.data.children[cptImage].data.preview.images[0].source[0] + "\" alt=\"" +
+	            "<img src=\"" + obj.data.children[cptImage].data.preview.images[0].source.url + "\" alt=\"" +
 								obj.data.children[cptImage].data.title + "\" " + " class=\"image\" \">" +
 	          "</div>" +
 	        "</a>" +
